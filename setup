@@ -121,6 +121,7 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/\$repo/os/\$arch
 fi	
 
 pacman -Syy
+yes | pacman -S archlinux-keyring
 
 echo -e "Performing Pacstrap Operation...\n"
 pacstrap /mnt base base-devel linux linux-firmware vim dhcpcd
